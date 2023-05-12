@@ -1,8 +1,8 @@
 {
-  "short_name": "Memento",
-  "name": "Memento App",
-  "scope": "https://memento-d6cac.web.app/",
-  "start_url": "https://memento-d6cac.web.app/",
+  "short_name": "Memento App",
+  "name": "Memento",
+  "scope": "/",
+  "start_url": "/",
   "description": "Memory Guessing Game",
   "icons": [
     {
