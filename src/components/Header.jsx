@@ -15,7 +15,8 @@ const Header = ({ handleNewGame, wins }) => {
       </h4>
       <h3>Memento</h3>
       <button onClick={handleNewGame}>
-        <VscDebugRestart size={18} className='new-game-icon' /> New Game
+        <VscDebugRestart size={21} className='new-game-icon' />
+        Restart
       </button>
     </header>
   );

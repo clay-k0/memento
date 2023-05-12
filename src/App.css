@@ -72,15 +72,22 @@ header {
 h3 {
   margin: auto;
   color: var(--text);
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   font-weight: 900;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  padding-left: 2rem;
 }
 h4 {
   margin: auto;
   color: var(--orange);
   font-weight: 900;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  background-color: rgba(0, 0, 0, 0.203);
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.215),
+    0px 0px 10px rgba(0, 0, 0, 0.37) inset;
 }
 button {
   border: none;
@@ -95,7 +102,9 @@ button {
   border-radius: 5px;
   cursor: pointer;
   font-size: 1rem;
-  margin-right: 0.5rem;
+  font-size: 1.3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 button:hover {
   transform: scale(1.02);
@@ -104,7 +113,9 @@ button:hover {
 }
 .new-game-icon {
   vertical-align: middle;
-  margin-right: 0.1rem;
+  margin-bottom: 0.2rem;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  margin-right: 0.3rem;
 }
 
 /* ========= Grid ========================= */
@@ -137,6 +148,9 @@ button:hover {
   border-radius: var(--radius);
   transition: var(--transition);
   cursor: pointer;
+  background-color: rgba(44, 43, 43, 0.605);
+  box-shadow: 0px 2px 2px rgba(43, 43, 43, 0.391),
+    0px 0px 10px rgba(38, 38, 38, 0.486) inset;
 }
 .card-face:hover,
 .card-back:hover {
@@ -178,7 +192,8 @@ button:hover {
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    padding: 0;
   }
 
   h4 {
@@ -186,7 +201,7 @@ button:hover {
   }
 
   button {
-    padding: 0.5rem;
+    padding: 0.4rem;
   }
 
   header {
