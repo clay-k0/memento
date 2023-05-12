@@ -1,7 +1,7 @@
 @import-normalize;
 
 :root {
-  --text: #f6d794;
+  --text: #f6bf94;
   --card: #2f2f2fb4;
   --orange: #ee7171;
   --bg: linear-gradient(111.4deg, #ee7171 1%, #f6d794 58%);
@@ -43,7 +43,17 @@ body {
   align-items: flex-start;
   justify-content: center;
   font-family: var(--font-family);
-  padding-top: 4rem;
+  padding-top: 7rem;
+}
+hr {
+  background: black;
+  display: flex;
+  margin: 1rem auto;
+  border: none;
+  height: 1px;
+  width: 100%;
+  opacity: 0.3;
+  margin-bottom: 3rem;
 }
 
 /* ========= Menu ======================== */
@@ -62,10 +72,15 @@ header {
 h3 {
   margin: auto;
   color: var(--text);
+  font-size: 1.7rem;
+  font-weight: 900;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
 h4 {
   margin: auto;
   color: var(--orange);
+  font-weight: 900;
+  font-size: 1.2rem;
 }
 button {
   border: none;
@@ -74,12 +89,22 @@ button {
   border-radius: 3px;
   margin: auto;
   transition: transform 0.2s ease-in-out;
-  background-color: white;
+  background-color: #f0d6a6;
+  color: rgb(0, 0, 0);
+  font-weight: 900;
   border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 0.5rem;
 }
-
 button:hover {
-  transform: scale(1.06);
+  transform: scale(1.02);
+  opacity: 0.8;
+  cursor: pointer;
+}
+.new-game-icon {
+  vertical-align: middle;
+  margin-right: 0.1rem;
 }
 
 /* ========= Grid ========================= */
@@ -111,14 +136,13 @@ button:hover {
   box-shadow: var(--shadow);
   border-radius: var(--radius);
   transition: var(--transition);
-  transition: transform 0.28s ease-in-out;
+  cursor: pointer;
 }
-
 .card-face:hover,
 .card-back:hover {
-  transform: scale(1.07);
+  transform: scale(1.09);
+  opacity: 0.8;
 }
-
 .card-face {
   position: absolute;
   transform: var(--rotate-90);
@@ -150,6 +174,19 @@ button:hover {
 @media screen and (max-width: 720px) {
   body {
     align-items: center;
+    padding-top: 1rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  button {
+    padding: 0.5rem;
   }
 
   header {

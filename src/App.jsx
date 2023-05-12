@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Card from "./components/Card";
 import Header from "./components/Header";
 import shuffle from "./utilities/shuffle";
+import useAppBadge from "./hooks/useAppBadge";
 import "./App.css";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
   const [pickOne, setPickOne] = useState(null); // First selection
   const [pickTwo, setPickTwo] = useState(null); // Second selection
   const [disabled, setDisabled] = useState(false); // Delay handler
+  const [setBadge, clearBadge] = useAppBadge();
 
   // Handle card selection
   const handleClick = (card) => {
@@ -26,6 +28,7 @@ function App() {
 
   // Start over
   const handleNewGame = () => {
+    clearBadge();
     setWins(0);
     handleTurn();
     setCards(shuffle);
@@ -73,16 +76,18 @@ function App() {
 
     // All matches made, handle win/badge counters
     if (cards.length && checkWin.length < 1) {
+      setBadge();
       console.log("You win!");
       setWins(wins + 1);
       handleTurn();
       setCards(shuffle);
     }
-  }, [cards, wins]);
+  }, [cards, wins, setBadge]);
 
   return (
     <>
       <Header handleNewGame={handleNewGame} wins={wins} />
+      <hr />
       <div className='grid'>
         {cards.map((card) => {
           // Destructured card properties
@@ -99,6 +104,7 @@ function App() {
           );
         })}
       </div>
+      <hr />
     </>
   );
 }

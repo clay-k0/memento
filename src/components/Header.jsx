@@ -1,15 +1,20 @@
 import { useEffect } from "react";
+import { VscDebugRestart } from "react-icons/vsc";
 
 const Header = ({ handleNewGame, wins }) => {
   useEffect(() => {
-    document.title = `Memento Game | ${wins} wins`;
+    document.title = `Memento | ${wins} ${wins === 1 ? "win" : "wins"}`;
   }, [wins]);
 
   return (
     <header className='header'>
-      <h4>{wins} wins</h4>
+      <h4>
+        {wins} {wins === 1 ? "win" : "wins"}
+      </h4>
       <h3>Memento</h3>
-      <button onClick={handleNewGame}>New Game</button>
+      <button onClick={handleNewGame}>
+        <VscDebugRestart size={18} className='new-game-icon' /> New Game
+      </button>
     </header>
   );
 };
