@@ -3,13 +3,15 @@ import { VscDebugRestart } from "react-icons/vsc";
 
 const Header = ({ handleNewGame, wins }) => {
   useEffect(() => {
-    document.title = `Memento | ${wins} ${wins === 1 ? "win" : "wins"}`;
+    document.title = `Memento | ${wins} ${
+      wins === 0 ? "wins" : wins === 1 ? "win!" : "wins!"
+    }`;
   }, [wins]);
 
   return (
     <header className='header'>
       <h4>
-        {wins} {wins === 1 ? "win" : "wins"}
+        {wins} {wins === 0 ? "wins" : wins === 1 ? "win!" : "wins!"}
       </h4>
       <h3>Memento</h3>
       <button onClick={handleNewGame}>
