@@ -43,7 +43,7 @@ body {
   align-items: flex-start;
   justify-content: center;
   font-family: var(--font-family);
-  padding-top: 7rem;
+  padding-top: 5rem;
 }
 hr {
   background: black;
