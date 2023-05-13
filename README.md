@@ -18,5 +18,5 @@ onto your machine.
 1. Click on two cards to reveal their hidden images.
 2. If the images match, the cards will remain visible and you can continue selecting.
 3. If the images do not match, the cards will be hidden again and you must try again.
-4. The game is won when all cards have been matched.
-5. Start a new game by clicking the "New Game" button in the header.
+4. There is optional restart button if you wish to start over.
+5. The game is won when all cards have been matched; the game auto resets.
