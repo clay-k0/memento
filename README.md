@@ -10,7 +10,8 @@ This is a simple memory match game built with React.
 
 ### Installation
 
-The best way to mess with it is on its [site](https://memento-d6cac.web.app/)
+The site is [here](https://memento-d6cac.web.app/); you should be able to install it
+to your machine.
 
 ### Usage
 
