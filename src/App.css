@@ -32,14 +32,21 @@
   box-sizing: border-box;
 }
 
+html,
 body {
-  height: 100vh;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
   width: 100vw;
   padding: 1rem;
   display: flex;
   overflow: auto;
   color: var(--text);
   background: var(--bg);
+  margin: 0;
+
   align-items: flex-start;
   justify-content: center;
   font-family: var(--font-family);
