@@ -1,4 +1,4 @@
-## Memento
+# Memento
 
 This is a simple memory match game built with React.
 
